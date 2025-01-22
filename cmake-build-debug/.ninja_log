@@ -1,0 +1,6 @@
+# ninja log v6
+4	322	1737523638479957359	CMakeFiles/ExpenseTracker.dir/Expense.cpp.o	189d8bac1a60ab5a
+3	214	1736937238281632525	CMakeFiles/ExpenseTracker.dir/main.cpp.o	201fdfe87f2a1db7
+4	354	1737523638479470686	CMakeFiles/ExpenseTracker.dir/Dashboard.cpp.o	9ffcb123cefee4ad
+354	391	1737523638829651596	ExpenseTracker	7576c1d25abba42b
+1	218	1736937192451232499	CMakeFiles/ExpenseTracker.dir/User.cpp.o	1392270f43cd7327

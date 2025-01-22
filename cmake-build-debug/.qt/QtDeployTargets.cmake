@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_ExpenseTracker_FILE /Users/hyacinthechemasle/Programming/ExpenseTracker/cmake-build-debug/ExpenseTracker)
+set(__QT_DEPLOY_TARGET_ExpenseTracker_TYPE EXECUTABLE)
