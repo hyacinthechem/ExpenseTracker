@@ -1,24 +1,27 @@
+# Specify the minimum required version of CMake
 cmake_minimum_required(VERSION 3.29)
 
 # Set the project name
 project(ExpenseTracker)
 
-# Set C++ standard
-set(CMAKE_CXX_STANDARD 14)
+# Set the C++ standard to 17
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Optionally, set Qt's CMake prefix path if Qt is installed in a non-default location.
-# If Qt is installed in a standard location, you can skip this line.
-# Replace with the correct path to your Qt6 installation if necessary
+# Explicitly set the architecture for macOS (Apple Silicon - arm64)
+set(CMAKE_OSX_ARCHITECTURES "arm64" CACHE STRING "Build architecture")
 
-set(CMAKE_PREFIX_PATH " /Users/hyacinthechemasle/Programming/ExpenseTracker")
+# Specify the Qt CMake prefix path if installed in a custom location
+# Adjust this path to the actual location of your Qt6 installation
+set(CMAKE_PREFIX_PATH "/Users/hyacinthechemasle/Programming/ExpenseTracker")
 
-# Find the Qt6 Widgets package
+# Find the required Qt6 components
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
-# Include directories
+# Include directories (current directory in this case)
 include_directories(.)
 
-# Add the executable, listing all necessary source files
+# Add the executable target with all the necessary source files
 add_executable(ExpenseTracker
         Dashboard.cpp
         Dashboard.h
@@ -26,7 +29,8 @@ add_executable(ExpenseTracker
         Expense.h
         User.h
         User.cpp
-        main.cpp)
+        main.cpp
+)
 
-# Link the necessary Qt libraries (Widgets in this case)
+# Link the Qt6 Widgets library to the executable target
 target_link_libraries(ExpenseTracker Qt6::Widgets)

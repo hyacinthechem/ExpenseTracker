@@ -44,19 +44,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 22,
+				"line" : 25,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 32,
+				"line" : 36,
 				"parent" : 0
 			},
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 16,
+				"line" : 19,
 				"parent" : 0
 			},
 			{
@@ -210,7 +210,7 @@
 			{
 				"command" : 8,
 				"file" : 0,
-				"line" : 19,
+				"line" : 22,
 				"parent" : 0
 			}
 		]
@@ -298,6 +298,7 @@
 			{
 				"backtraces" : 
 				[
+					2,
 					2
 				],
 				"standard" : "17"
